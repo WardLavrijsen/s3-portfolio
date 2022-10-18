@@ -19,7 +19,8 @@ Leraren: Marc van Grootel en Marc van Heumen
     - [2.6 You analyze (non-functional) requirements, elaborate (architectural) designs and validate them using multiple types of test techniques.](#26-you-analyze-non-functional-requirements-elaborate-architectural-designs-and-validate-them-using-multiple-types-of-test-techniques)
     - [2.7 You analyze and describe simple business processes that are related to your project.](#27-you-analyze-and-describe-simple-business-processes-that-are-related-to-your-project)
     - [2.8 You act in a professional manner during software development and learning.](#28-you-act-in-a-professional-manner-during-software-development-and-learning)
-  - [3 Inleiding](#3-inleiding)
+  - [3 Onderzoek](#3-onderzoek)
+    - [3.1 Dot Framework Security](#31-dot-framework-security)
 
 ## 1. Inleiding
 
@@ -107,4 +108,6 @@ You actively ask and apply feedback from stakeholders and advise them on the mos
 
 - [Link](#project-1)
 
-## 3 Inleiding
+## 3 Onderzoek
+
+### 3.1 Dot Framework Security
