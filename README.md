@@ -11,7 +11,7 @@ Leraren: Marc van Grootel en Marc van Heumen
   - [Inhoudsopgave](#inhoudsopgave)
   - [1. Inleiding](#1-inleiding)
   - [2. Leeruitkomsten](#2-leeruitkomsten)
-    - [2.1 You design and build **user-friendly**, **full-stack** web applications.](#21-you-design-and-build-user-friendly-full-stack-web-applications)
+    - [2.1 You design and build user-friendly, full-stack web applications.](#21-you-design-and-build-user-friendly-full-stack-web-applications)
 
 ## 1. Inleiding
 
@@ -23,6 +23,7 @@ In dit document vind u de volgende onderdelen: De verschillende leeruitkomsten e
 
 In dit onderdeel zijn alle leeruitkomsten en uitleg te vinden. Ook wordt hierin gelinkt naar de verschillende onderdelen waarin deze leeruitkomsten zijn toegepast.
 
-### 2.1 You design and build **user-friendly**, **full-stack** web applications.
+### 2.1 You design and build user-friendly, full-stack web applications.
 
-User friendly:
+**User friendly:**
+You apply basic User experience testing and development techniques.
