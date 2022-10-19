@@ -223,3 +223,9 @@ vanuit dit design hebben we een aantal ideen opgesteld. Deze zijn hieronder te z
 #### Design 6
 
 ![Design 6](../images/WoC-Design6.png)
+
+Uiteindelijk is er besloten om verder te gaan met design 2 (lijkt op design 6) en hier op voort te bouwen. Dit is omdat dit design het meest overeenkomt met de huidige website van World of Content. Dit is ook het design dat het meest overzichtelijk is.
+
+Gezien de info die we uit de userstorys hebben gekregen en de verschillende intervieuws hebben we nog wat aanpassingen gedaan op dit design en is dit wat daar uit is gekomen.
+
+![Design 2](../images/WoC-Design2-new.png)
