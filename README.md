@@ -36,6 +36,7 @@ Leraren: Marc van Grootel en Marc van Heumen
     - [5.3 Software keuze](#53-software-keuze)
     - [5.3 Agile](#53-agile)
     - [5.4 UI/UX](#54-uiux)
+    - [5.5 Mijn bijdrage](#55-mijn-bijdrage)
 
 ## 1. Inleiding
 
@@ -230,3 +231,7 @@ Ik ben erg trots op het UI/UX procces. Ik ben hier veel tijd mee bezig geweest e
 
 ![Woc Gekozen Design](/images/WoC-Design2-new.png)
 _Voorbeeld van de hoofdpagina_
+
+### 5.5 Mijn bijdrage
+
+Ik heb de UX gedaan voor dit project. Dit heb ik gedaan met behulp van Figma. Hierin heb ik geleerd hoe een UX procces in zijn werk gaat. Ook heb ik Ik heb ook de frontend gemaakt. Dit heb ik gedaan met React.
