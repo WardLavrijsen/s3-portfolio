@@ -25,6 +25,9 @@
       - [Design 4](#design-4)
       - [Design 5](#design-5)
       - [Design 6](#design-6)
+    - [Het gekozen design](#het-gekozen-design)
+    - [Feedback van de designers van World of Content](#feedback-van-de-designers-van-world-of-content)
+  - [Development](#development)
 
 ## Hoe gaat het UX-proces te werk?
 
@@ -228,4 +231,18 @@ Uiteindelijk is er besloten om verder te gaan met design 2 (lijkt op design 6) e
 
 Gezien de info die we uit de userstorys hebben gekregen en de verschillende intervieuws hebben we nog wat aanpassingen gedaan op dit design en is dit wat daar uit is gekomen.
 
+### Het gekozen design
+
 ![Design 2](../images/WoC-Design2-new.png)
+
+### Feedback van de designers van World of Content
+
+Na het maken van de designs zijn deze naar de designers van world of content gestuurd. Zij hebben feedback gegeven op de designs. Deze feedback is hieronder te zien.
+
+[Figma](https://www.figma.com/file/QXiSsczGjRt8JTmbToN7Wz/World-Of-Content-Live-Score?node-id=0%3A1)
+
+Na het ontvangen van de feedback hebben we de designs aangepast en hebben we een nieuwe versie gemaakt. Deze is hieronder te zien.
+
+## Development
+
+De development is gedaan in Next.js. Dit is een framework die we al kenden en waar we ook al ervaring mee hadden. Dit is ook een framework die we in de toekomst nog wel eens zouden kunnen gebruiken. Daarnaast is het ook een framework die we goed kunnen gebruiken voor het maken van een prototype.
