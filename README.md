@@ -30,6 +30,7 @@ Leraren: Marc van Grootel en Marc van Heumen
     - [4.4 UI/UX](#44-uiux)
     - [4.5 Software design](#45-software-design)
     - [4.6 CI/CD](#46-cicd)
+    - [4.7 Profesionele bijdrage](#47-profesionele-bijdrage)
   - [5 Groepsproject](#5-groepsproject)
     - [5.1 Wie zijn World of Content](#51-wie-zijn-world-of-content)
     - [5.2 Waarom dit project:](#52-waarom-dit-project)
@@ -37,6 +38,7 @@ Leraren: Marc van Grootel en Marc van Heumen
     - [5.3 Agile](#53-agile)
     - [5.4 UI/UX](#54-uiux)
     - [5.5 Mijn bijdrage](#55-mijn-bijdrage)
+    - [5.6 Profesionele bijdrage](#56-profesionele-bijdrage)
   - [6 Reflectie](#6-reflectie)
     - [6.1 Wat heb ik geleerd?](#61-wat-heb-ik-geleerd)
     - [6.2 Wat kan ik beter doen?](#62-wat-kan-ik-beter-doen)
@@ -57,8 +59,8 @@ In dit onderdeel zijn alle leeruitkomsten en uitleg te vinden. Ook wordt hierin 
 **User friendly:**
 You apply basic User experience testing and development techniques.
 
-- [UI/UX Indiviudueel](#project-1)
-- [UI/UX Groepsproject](#project-1)
+- [UI/UX Indiviudueel](#44-uiux)
+- [UI/UX Groepsproject](#54-uiux)
 
 **Full-stack:**
 You design and build a full stack application using commonly accepted front end (Javascript-based framework) and back end techniques (e.g. Object Relational Mapping) choosing and implementing relevant communication protocols and addressing asynchronous communication issues.
@@ -127,7 +129,8 @@ Business processes needed for the success of your software development project (
 **Professional manner:**
 You actively ask and apply feedback from stakeholders and advise them on the most optimal technical and design (architectural) solutions. You choose and substantiate solutions for a given problem.
 
-- [Link](#project-1)
+- [Professionele wijze individueel](#47-profesionele-bijdrage)
+- [Professionele wijze groep](#56-profesionele-bijdrage)
 
 ## 3 Onderzoek
 
@@ -190,6 +193,10 @@ Om ervoor te zorgen dat de software makkelijk te deployen is en dat er geen fout
 
 [Frontend repo](https://github.com/WardLavrijsen/FAST-Frontend.git) | [Backend repo](https://github.com/WardLavrijsen/FAST-Backend)
 
+### 4.7 Profesionele bijdrage
+
+Tijdens het project heb ik erg veel samengewerkt met mijn stakeholder. Heel erg vaak bij elkaar gezeten over de voortgang en de verschillende requirements. Dit naast alle feedback die ik heb gekregen van docenten en het verwerken van die feedback geeft mij een goede professionele bijdrage aan dit project.
+
 ## 5 Groepsproject
 
 ![Logo Forza](https://www.partnersfontysict.nl/site/assets/files/6949/world_of_content-logo.-logo_medium.jpg)
@@ -239,6 +246,10 @@ _Voorbeeld van de hoofdpagina_
 ### 5.5 Mijn bijdrage
 
 Ik heb de UX gedaan voor dit project. Dit heb ik gedaan met behulp van Figma. Hierin heb ik geleerd hoe een UX procces in zijn werk gaat. Dit omdat ze vanuit WoC graag een UX design wouden zien. Na het UI/UX procces heb ik mezelf gericht op het maken van de front-end van dit project. Hier ben ik ook erg trots op. Ik heb al veel geleerd van dit project.
+
+### 5.6 Profesionele bijdrage
+
+Doordat ik de UX van dit project heb gedaan heb ik veel met Tom (de stakeholder ) en de designers bij world of content samengewerkt. Daarnaast heb ik in de groep ook een profesionele houding gehad en mijn bijdrage aan het project geleverd. Dit naast alle feedback die we heb gekregen van docenten en de verwerking hiervan. Dit was mijn professionele bijdrage aan ons project.
 
 ## 6 Reflectie
 
