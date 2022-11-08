@@ -20,6 +20,9 @@
   - [Gesprekken Stakeholders:](#gesprekken-stakeholders)
     - [Gesprek 1:](#gesprek-1)
     - [Gesprek 2:](#gesprek-2)
+  - [ORM](#orm)
+    - [Implementeren ORM](#implementeren-orm)
+    - [Entity](#entity)
   - [C4 Model](#c4-model)
 
 ## Inleiding
@@ -119,6 +122,40 @@ Nieuwe Requirements na dit gesprek:
 - Ticket categorieën aanmaken.
 - Ticket categorieën wijzigen en verwijderen.
 - Het filteren van wedstrijden op bijvoorbeeld datum. (Could Have)
+
+## ORM
+
+Ik heb gekozen voor een ORM omdat ik hiermee makkelijk kan werken en ik niet zelf de queries hoef te schrijven. Hierdoor kan ik me meer focussen op de functionaliteiten en de kwaliteit van de code.
+
+Ik heb gebruik gemaakt van de panache Libarary in Quarkus. Deze library is een ORM die gebruik maakt van Hibernate. Hierdoor kan ik makkelijk queries maken en de data opslaan in een database.
+
+#### Implementeren ORM
+
+```java
+@ApplicationScoped
+public class ClubRepository implements PanacheRepository<Club>{}
+```
+
+#### Entity
+
+```java
+@Entity
+public class Club {
+    @Id
+    private Integer id;
+    private String name;
+    private String logo;
+    private Integer leagueId;
+
+    public Club() {
+    }
+
+    public Club(Integer id, String name, String logo, Integer leagueId) {
+        this.id = id;
+        this.name = name;
+        this.logo = logo;
+    }
+```
 
 ## C4 Model
 

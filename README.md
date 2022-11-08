@@ -106,14 +106,16 @@ Adapt your communication, working, and behavior styles to reflect project stakeh
 **Multiple types of test techniques:**
 You apply user acceptance testing and stakeholder feedback to validate the quality of the requirements. You evaluate the quality of the design (e.g., by testing or prototyping) taking into account the formulated quality properties like security and performance.
 
-- [Link](#project-1)
+- [Software Design individueel](#45-software-design)
+- [Professionele wijze individueel](#47-profesionele-bijdrage)
+- [Professionele wijze groep](#56-profesionele-bijdrage)
 
 ### 2.7 You analyze and describe simple business processes that are related to your project.
 
 **Simple:**
 Involving stakeholders, predominantly sequential processes with one or two alternative paths.
 
-- [Link](#project-1)
+- [Software Design Individueel](#45-software-design)
 
 **Related:**
 Business processes during which the software that you are developing will be used (business processes that the software must support by fully or partially automating them).
@@ -259,7 +261,7 @@ Wat ik geleerd heb dit semester is het maken van software op een hele andere man
 
 ### 6.2 Wat kan ik beter doen?
 
-Ik kan beter mijn eigen ontwikkeling voorop zetten. Ik heb dit semester veel geleerd en ik wil dit graag in de praktijk brengen. Ik wil mijzelf meer gaan verdiepen in de technieken die ik heb geleerd en deze ook gaan toepassen in mijn werk.
+Mijn aandacht verdelen over meerdere leeruitkomsten en niet al te diep in gaan op een leeruitkomst. Ik heb dit semester veel geleerd en ik wil dit graag in de praktijk brengen. Ik wil mijzelf meer gaan verdiepen in de technieken die ik heb geleerd en deze ook gaan toepassen in mijn werk.
 
 ### 6.3 Voortgang
 
