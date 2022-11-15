@@ -23,6 +23,7 @@ Leraren: Marc van Grootel en Marc van Heumen
     - [3.1 Dot Framework Security](#31-dot-framework-security)
     - [3.2 Agile](#32-agile)
     - [3.3 Dot Framework](#33-dot-framework)
+    - [3.4 Business processes](#34-business-processes)
   - [4 Indiviudueel project](#4-indiviudueel-project)
     - [4.1 Projectomscrijving](#41-projectomscrijving)
     - [4.2 Waarom dit project:](#42-waarom-dit-project)
@@ -116,6 +117,7 @@ You apply user acceptance testing and stakeholder feedback to validate the quali
 Involving stakeholders, predominantly sequential processes with one or two alternative paths.
 
 - [Software Design Individueel](#45-software-design)
+- [Business Processes](#34-business-processes)
 
 **Related:**
 Business processes during which the software that you are developing will be used (business processes that the software must support by fully or partially automating them).
@@ -145,6 +147,14 @@ Agile is een heel belangrijk concept in de software engineering. Dit is ook in h
 [Naar bestand](Research/Agile.md)
 
 ### 3.3 Dot Framework
+
+### 3.4 Business processes
+
+Hierin heb ik business processes onderzocht en hoe deze in de software engineering worden toegepast. Ook heb ik een voorbeeld van een business process gemaakt.
+
+Daarnaast heb ik hier mijn eigen business process uitgewerkt. Dit is het business process van mijn individuele project.
+
+[Naar bestand](Research/BusinessProcess.md)
 
 ## 4 Indiviudueel project
 
