@@ -29,9 +29,10 @@ Leraren: Marc van Grootel en Marc van Heumen
     - [4.2 Waarom dit project:](#42-waarom-dit-project)
     - [4.3 Agile](#43-agile)
     - [4.4 UI/UX](#44-uiux)
-    - [4.5 Software design](#45-software-design)
-    - [4.6 CI/CD](#46-cicd)
-    - [4.7 Profesionele bijdrage](#47-profesionele-bijdrage)
+    - [4.5 Software Quality Assurance](#45-software-quality-assurance)
+    - [4.6 Software design](#46-software-design)
+    - [4.7 CI/CD](#47-cicd)
+    - [4.8 Profesionele bijdrage](#48-profesionele-bijdrage)
   - [5 Groepsproject](#5-groepsproject)
     - [5.1 Wie zijn World of Content](#51-wie-zijn-world-of-content)
     - [5.2 Waarom dit project:](#52-waarom-dit-project)
@@ -67,13 +68,14 @@ You apply basic User experience testing and development techniques.
 You design and build a full stack application using commonly accepted front end (Javascript-based framework) and back end techniques (e.g. Object Relational Mapping) choosing and implementing relevant communication protocols and addressing asynchronous communication issues.
 
 - [Individueel Project](#4-indiviudueel-project)
+- [Groeps Project](#5-groepsproject)
 
 ### 2.2 You use software tooling and methodology that continuously monitors and improve the software quality during software development.
 
 **Tooling and methodology:**
 Carry out, monitor and report on unit integration, regression and system tests, with attention for security and performance aspects, as well as applying static code analysis and code reviews.
 
-- [Naar bestand](FAST/SoftwareQualityInsurence.md)
+- [Software Quality Assurance](#45-software-quality-assurance)
 
 ### 2.3 You choose and implement the most suitable agile software development method for your software project.
 
@@ -108,6 +110,7 @@ Adapt your communication, working, and behavior styles to reflect project stakeh
 You apply user acceptance testing and stakeholder feedback to validate the quality of the requirements. You evaluate the quality of the design (e.g., by testing or prototyping) taking into account the formulated quality properties like security and performance.
 
 - [Software Design individueel](#45-software-design)
+- [Software Quality Assurance](#45-software-quality-assurance)
 - [Professionele wijze individueel](#47-profesionele-bijdrage)
 - [Professionele wijze groep](#56-profesionele-bijdrage)
 
@@ -118,15 +121,6 @@ Involving stakeholders, predominantly sequential processes with one or two alter
 
 - [Software Design Individueel](#45-software-design)
 - [Business Processes](#34-business-processes)
-
-**Related:**
-Business processes during which the software that you are developing will be used (business processes that the software must support by fully or partially automating them).
-
-or
-
-Business processes needed for the success of your software development project (e.g., product release, market release, financial assurance).
-
-- [Link](#project-1)
 
 ### 2.8 You act in a professional manner during software development and learning.
 
@@ -189,15 +183,24 @@ Om ervoor te zorgen dat de software makkelijk te gebruiken is en het overzichtel
 ![Forza Automation System for Tickets](/images/FAST-design1.png)
 _Voorbeeld van de hoofdpagina_
 
-### 4.5 Software design
+### 4.5 Software Quality Assurance
+
+Hoe belangrijk is het wel niet dat je code altijd werkt en niet dat je op het moment van een nieuwe release ineens een bug tegenkomt. Om dit te voorkomen heb ik gebruik gemaakt van software quality assurance. Dit heb ik gedaan door middel van allerlei verschilllende soorten testen en door middel van static code analysis.
+
+[Bekijk bestand](/FAST/SoftwareQualityInsurence.md)
+
+### 4.6 Software design
 
 Hier zijn alle eisen en wensen van de klant te vinden. Ook is hierin te zien hoe ik deze heb vertaald naar de software. Requirements, De gesprekken met de stakeholder en het C4 model.
 
 [Bekijk bestand](/FAST/SoftwareDesign.md)
 
-### 4.6 CI/CD
+### 4.7 CI/CD
 
 Om ervoor te zorgen dat de software makkelijk te deployen is en dat er geen fouten in de software komen heb ik CI/CD toegepast. Dit is ook erg belangrijk voor de klant omdat zij hierdoor makkelijk updates kunnen doen en de software altijd up to date is. Ook is het makkelijker om de software te testen en te deployen. om dit te doen heb ik gebruik gemaakt van Github Actions. Dit is een gratis tool die je kan gebruiken om CI/CD te doen. Ik heb hier een workflow voor gemaakt die elke keer als er een push wordt gedaan naar de master branch de software gaat builden en testen. Als dit succesvol is wordt de software gedeployed naar de server. Ook heb ik een workflow gemaakt die elke keer als er een pull request wordt gedaan de software gaat builden en testen. Als dit succesvol is kan de pull request gemerged worden. Dit is erg handig omdat je dan weet dat de software altijd werkt en dat er geen fouten in de software zitten.
+
+![Github CI](./images/StaticCodeGithub.jpg)
+_CI/CD zorgt ervoor dat je alle problemen meteen tegenkomt._
 
 [Frontend CI](/FAST/FrontendIntegrade.yml) | [Frontend CD](/FAST/FrontendDeploy.yml)
 
@@ -205,7 +208,7 @@ Om ervoor te zorgen dat de software makkelijk te deployen is en dat er geen fout
 
 [Frontend repo](https://github.com/WardLavrijsen/FAST-Frontend.git) | [Backend repo](https://github.com/WardLavrijsen/FAST-Backend)
 
-### 4.7 Profesionele bijdrage
+### 4.8 Profesionele bijdrage
 
 Tijdens het project heb ik erg veel samengewerkt met mijn stakeholder. Heel erg vaak bij elkaar gezeten over de voortgang en de verschillende requirements. Dit naast alle feedback die ik heb gekregen van docenten en het verwerken van die feedback geeft mij een goede professionele bijdrage aan dit project.
 

@@ -69,5 +69,12 @@ Een andere manier om de kwaliteit van je code te testen is door middel van stati
 ![Sonarcloud op het begin](../images/SonarCloudZonder.jpg)
 _De eerste keer dat sonarcloud de static code analysis uitvoerde_
 
-![Sonarcloud op het begin](../images/SonarCloudZonder.jpg)
+![Sonarcloud op het begin](../images/SonarCloudMet.jpg)
 _Nadat ik de problemen had opgelost die in sonarcloud naar voren waren gekomen_
+
+Zo zorgt deze static code analysis ervoor dat ik mijn code kan verbeteren.
+
+Het grootste voordeel hieraan is dat op het moment dat ik de code push naar github, de CI/CD pipeline automatisch wordt uitgevoerd. Hieruit volgt een overzicht van de kwaliteit van mijn code. Hieruit krijg ik dus een duidelijk overzicht van wat ik moet verbeteren.
+
+![Github CI](../images/StaticCodeGithub.jpg)
+_Hier is te zien wat er bij deze CI fout ging._

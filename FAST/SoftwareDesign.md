@@ -24,6 +24,22 @@
     - [Implementeren ORM](#implementeren-orm)
     - [Entity](#entity)
   - [C4 Model](#c4-model)
+  - [Distributated Software](#distributated-software)
+    - [Wat is distributated software?](#wat-is-distributated-software)
+    - [Hoe is dit toegepast in mijn project?](#hoe-is-dit-toegepast-in-mijn-project)
+  - [REST API](#rest-api)
+    - [Wat is een REST API?](#wat-is-een-rest-api)
+      - [Client-server](#client-server)
+      - [Stateless](#stateless)
+      - [Cacheable](#cacheable)
+      - [Uniform interface](#uniform-interface)
+      - [Layered system](#layered-system)
+      - [Code on demand](#code-on-demand)
+    - [Verbs](#verbs)
+    - [Status codes](#status-codes)
+    - [REST API in mijn project](#rest-api-in-mijn-project)
+  - [Asynchronous](#asynchronous)
+    - [Wat is asynchronous?](#wat-is-asynchronous)
 
 ## Inleiding
 
@@ -164,3 +180,122 @@ public class Club {
 
 [Image: C4 Model fase 2]
 ![C4 Model 1](/images/C4%20FAST%202.png)
+
+## Distributated Software
+
+### Wat is distributated software?
+
+Distributated software is software die op meerdere servers draait. Deze servers kunnen op verschillende locaties staan. De servers kunnen ook verschillende taken hebben. Zo kan er een server zijn die alleen de data opslaat en een server die alleen de data verwerkt. Dit is een voorbeeld van distributated software.
+
+### Hoe is dit toegepast in mijn project?
+
+Het project is opgedeeld in 4 verschillende services. Deze services zijn:
+
+- Front-end
+- Back-end
+- Database
+- Externe API
+
+De front en back-end service communiceren met elkaar via een REST API. De frontend kan dus de data ophalen van de backend. De backend kan de data ophalen van de database en de externe API. De database slaat de data op en de externe API haalt is de data van de ticketpartners en voetbal API.
+
+De database en de Backend communiceren via jbdc.
+
+## REST API
+
+### Wat is een REST API?
+
+Een REST API is een API die gebruik maakt van de REST principes. REST staat voor Representational State Transfer. REST is een architectuur die gebruikt wordt om data uit te wisselen tussen verschillende systemen. REST is een architectuur die gebruik maakt van HTTP. REST is een architectuur die gebruik maakt van de 6 principes:
+
+- Client-server
+- Stateless
+- Cacheable
+- Uniform interface
+- Layered system
+- Code on demand
+
+#### Client-server
+
+De client-server architectuur is een architectuur waarbij de client en de server gescheiden zijn. De client is de gebruiker van de applicatie en de server is de applicatie zelf. De client kan dus niet direct met de server communiceren. De client moet dus eerst een request sturen naar de server. De server kan dan een response terugsturen naar de client.
+
+#### Stateless
+
+De stateless architectuur is een architectuur waarbij de server geen informatie over de client bijhoudt. De server weet dus niet wie de client is. De server weet dus ook niet wat de client eerder heeft gedaan, heeft opgevraagd, heeft veranderd of heeft verwijderd.
+
+#### Cacheable
+
+De cacheable architectuur is een architectuur waarbij de server de data kan opslaan in een cache. De cache is een tijdelijke opslagplaats.
+
+#### Uniform interface
+
+De uniform interface architectuur is een architectuur waarbij de server en de client dezelfde interface gebruiken. De server en de client gebruiken dezelfde taal. De server en de client gebruiken dezelfde data structuur. De server en de client gebruiken dezelfde communicatie protocollen.
+
+#### Layered system
+
+De layered system architectuur is een architectuur waarbij de server en de client in verschillende lagen zijn opgedeeld.
+
+#### Code on demand
+
+De code on demand architectuur is een architectuur waarbij de server code kan uitvoeren op de client.
+
+Dit is super fijn omdat de server en de client dan makkelijk met elkaar kunnen communiceren. De server en de client hoeven dus niet te weten hoe de andere applicatie werkt. De server en de client hoeven dus niet te weten hoe de andere applicatie is opgebouwd.
+
+### Verbs
+
+Verbs zijn de HTTP methodes. De HTTP methodes zijn GET, POST, PUT, PATCH en DELETE. De GET methode wordt gebruikt om data op te halen. POST om data op te slaan. PUT om data te veranderen. PATCH om data te veranderen. DELETE om data te verwijderen.
+
+### Status codes
+
+Status codes zorgen ervoor dat de client weet wat de server heeft gedaan. De reden waarom dit zo handig is en de reden is waarom het veel wordt gebruikt is omdat de client dan bijvoorbeeld een foutmelding laten zien als de server een foutmelding heeft gestuurd.
+
+Zo heb je bijvoorbeeld 200 voor dat het goed is.
+Zo heb je bijvoorbeeld 400 voor dat er een fout is.
+en 500 voor dat er een server fout is.
+
+![Status Code memes](https://preview.redd.it/z6mbo9dyc1x51.jpg?auto=webp&s=a0b3e0d975fd1467598689bfb7162d7fef44e8b7)
+_Hoe het niet moet_
+
+### REST API in mijn project
+
+In mijn project heb ik een REST API gemaakt. Deze REST API is gemaakt met Quarkus. Quarkus is een Java framework die gebruik maakt van de REST principes.
+
+## Asynchronous
+
+### Wat is asynchronous?
+
+Asynchrone communicatie is vaak een complex onderwerk maar met deze voorbeelden is het heel logisch
+
+- Als je de vaatwasser aanzet wacht je dan tot deze klaar is?
+- Als je een mail stuurt wacht je dan tot de ontvanger deze heeft gelezen?
+- Als je een bestelling plaatst wacht je dan tot je pakket binnen is?
+
+Nee, je wacht niet tot de vaatwasser klaar is, je wacht niet tot de ontvanger de mail heeft gelezen en je wacht niet tot je pakket binnen is. Je doet andere dingen terwijl je wacht. Dit is asynchrone communicatie.
+
+Hoe heeft dit dan met software te maken?
+
+Simpel, je software gaat iets anders doen in de tijd dat het bijvoorbeeld op de API wacht.
+
+Dit zorgt er bijvoorbeeld voor dat je applicatie niet vastloopt als de API niet reageert. Dit zorgt er ook voor dat je applicatie sneller is.
+
+Zo zou je applicatie zonder asynchrone communicatie bijvoorbeeld niet werken als er op een button wordt geklikt.
+
+![async](https://velog.velcdn.com/images%2Fazurestefan%2Fpost%2F37a894d3-d473-4a9a-8445-2164d2f58439%2Fimage.png)
+_Hier zie je hoe asynchrone communicatie werkt in javascript_
+
+```js
+(async () => {
+  try {
+    const res = await axios.get(
+      "http://localhost:8080/api/game/" +
+        searchParams.get("leagueid") +
+        "/" +
+        searchParams.get("clubid")
+    );
+    setData(res.data);
+  } catch (error) {
+    console.error("error");
+    console.error(error);
+  }
+})();
+```
+
+_Dit is een voorbeeld van asynchrone communicatie in mijn frontend_
