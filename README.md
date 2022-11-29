@@ -197,16 +197,9 @@ Hier zijn alle eisen en wensen van de klant te vinden. Ook is hierin te zien hoe
 
 ### 4.7 CI/CD
 
-Om ervoor te zorgen dat de software makkelijk te deployen is en dat er geen fouten in de software komen heb ik CI/CD toegepast. Dit is ook erg belangrijk voor de klant omdat zij hierdoor makkelijk updates kunnen doen en de software altijd up to date is. Ook is het makkelijker om de software te testen en te deployen. om dit te doen heb ik gebruik gemaakt van Github Actions. Dit is een gratis tool die je kan gebruiken om CI/CD te doen. Ik heb hier een workflow voor gemaakt die elke keer als er een push wordt gedaan naar de master branch de software gaat builden en testen. Als dit succesvol is wordt de software gedeployed naar de server. Ook heb ik een workflow gemaakt die elke keer als er een pull request wordt gedaan de software gaat builden en testen. Als dit succesvol is kan de pull request gemerged worden. Dit is erg handig omdat je dan weet dat de software altijd werkt en dat er geen fouten in de software zitten.
+Om ervoor te zorgen dat de software makkelijk te deployen is en dat er geen fouten in de software komen heb ik CI/CD toegepast. Dit is ook erg belangrijk voor de klant omdat zij hierdoor makkelijk updates kunnen doen en de software altijd up to date is. Ook is het makkelijker om de software te testen en te deployen.
 
-![Github CI](./images/StaticCodeGithub.jpg)
-_CI/CD zorgt ervoor dat je alle problemen meteen tegenkomt._
-
-[Frontend CI](/FAST/FrontendIntegrade.yml) | [Frontend CD](/FAST/FrontendDeploy.yml)
-
-[Backend CI](/FAST/BackendIntegrade.yml) | [Backend CD](/FAST/BackendDeploy.yml)
-
-[Frontend repo](https://github.com/WardLavrijsen/FAST-Frontend.git) | [Backend repo](https://github.com/WardLavrijsen/FAST-Backend)
+[Bekijk bestand](/FAST/CI-CD.md)
 
 ### 4.8 Profesionele bijdrage
 

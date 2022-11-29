@@ -8,6 +8,7 @@
     - [2 Automatiseren](#2-automatiseren)
   - [2.1 CI/CD](#21-cicd)
   - [3. Unit Testing](#3-unit-testing)
+  - [4. Unit Testen externe API](#4-unit-testen-externe-api)
   - [4. Integration Testing](#4-integration-testing)
   - [4. Static code analysis](#4-static-code-analysis)
 
@@ -25,9 +26,9 @@ Als je constant al deze verschillende testen zou moeten doen ben je voor eeuwig 
 
 ## 2.1 CI/CD
 
-CI/CD staat voor Continuous Integration en Continuous Deployment. Doormiddel van de CI/CD kunnen alle vormen van QA worden toegepast in mijn code en ervoor zorgen dat dit makkelijk verbeterd wordt.
+CI/CD staat voor Continuous Integration en Continuous Deployment. Doormiddel van de CI/CD kunnen alle vormen van QA worden toegepast in mijn code en het allerbelangrijkste is dat door de CI/CD dit allemaal automatisch wordt getest.
 
-Meer lezen over mijn CI/CD
+Meer lezen over mijn CI/C
 
 [Naar Bestand](../README.md#46-cicd)
 
@@ -36,6 +37,28 @@ Meer lezen over mijn CI/CD
 Unit Testing is het testen van een klein stukje code. Dit kan een functie zijn of een stukje code. Dit is de meest bekende vorm van QA.
 
 Doordat ik in dit project gebruik maak van veelal bestaande libraries is het niet mijn voorkeur om unit testing toe te passen. Dit omdat ik niet veel eigen logic code heb. Het zou dus een stuk verstandiger zijn om integration testing toe te passen.
+
+## 4. Unit Testen externe API
+
+Ik zeg nu net dat ik geen unit testen doe maar ik heb wel een unit test gemaakt voor de externe API. Dit omdat ik hier zelf de code voor heb geschreven en ik dus wel kan testen of de code die ik heb geschreven werkt.
+
+De belangrijkste reden is dat mijn externe API een externe API is. Dit betekent dat ik niet kan testen of de API werkt. Ik kan alleen testen of mijn code die de API aanroept werkt.
+
+Om dit te testen heb ik gebruik gemaakt van een test repository en een interface. Hierdoor kan ik in mijn test repository een mock maken van de externe API. Hierdoor kan ik testen of mijn code die de externe API aanroept werkt.
+
+```java
+@Test
+    void addGames() {
+        List<Game> beforeGames = gameService.allGames();
+        gameService.addGames("1", "3");
+        List<Game> afterGames = gameService.allGames();
+
+        System.out.println(beforeGames.stream().count());
+        System.out.println(afterGames.stream().count());
+    }
+```
+
+_Ik kan dan de testen makkelijk op deze manier maken_
 
 ## 4. Integration Testing
 
