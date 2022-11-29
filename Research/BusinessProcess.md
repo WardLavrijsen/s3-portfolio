@@ -78,7 +78,7 @@ Een business proces heeft te maken met software engineering omdat een business p
 
 Een goed voorbeeld hierbij is het business proces van het release procces.
 
-![Business process software engineering](https://edrawcloudpublicus.s3.amazonaws.com/edrawimage/work/2022-8-15/1660552449/main.png)
+![Business process software engineering](../images/product_release_process.png)
 
 Maar je kunt het ook andersom zien. Zo heeft een buisness process ook software nodig. Dit is om een buisness proces een stuk efficienter en makkelijker te maken.
 
