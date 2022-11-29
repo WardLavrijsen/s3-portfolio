@@ -21,7 +21,7 @@
 
 ## 1. Wat is een business proces?
 
-Een business process is een activiteit of een set of actiteiten die uitgevoerd moeten worden om een bepaald doel te bereiken. Dit process moet een nuttig doel hebben en duidelijk worden geformuleerd. In bijna alle gevallen is dit in de vorm van een flowchart. Business processen komen in verschillende grootte business processen worden meestal opgesplitst in kleinere subprocessen die met elkaar verbonden zijn.
+Een business process is een activiteit of een set actiteiten die uitgevoerd moeten worden om een bepaald doel te bereiken. Dit process moet een nuttig doel hebben en duidelijk worden geformuleerd. In bijna alle gevallen is dit in de vorm van een flowchart. Business processen komen in verschillende grootte business processen worden meestal opgesplitst in kleinere subprocessen die met elkaar verbonden zijn.
 
 Verschillende soorten business processen zijn:
 
@@ -78,7 +78,7 @@ Een business proces heeft te maken met software engineering omdat een business p
 
 Een goed voorbeeld hierbij is het business proces van het release procces.
 
-![Business process software engineering](../images/product_release_process.png)
+![Business process software engineering](https://edrawcloudpublicus.s3.amazonaws.com/edrawimage/work/2022-8-15/1660552449/main.png)
 
 Maar je kunt het ook andersom zien. Zo heeft een buisness process ook software nodig. Dit is om een buisness proces een stuk efficienter en makkelijker te maken.
 
