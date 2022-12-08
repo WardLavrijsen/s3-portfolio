@@ -144,3 +144,7 @@ Het Prototype is een werkend product. Dit is een werkend product waarin je kunt 
 ![prototype](../images/FAST-design1.png)
 
 ## Validation
+
+Na gesproken te hebben met mijn vader over dit design had hij een paar stukjes feedback. Dit heb ik verwerkt in het design.
+
+Hierna gewoon weer verder gegaaan met het design.

@@ -134,6 +134,10 @@ You actively ask and apply feedback from stakeholders and advise them on the mos
 
 ### 3.1 Dot Framework Security
 
+In dit onderzoek ga ik kijken wat het dot framework inhoud en ik ga doormiddel van deze methode onderzoek doen naar OWASP. Hierna ga ik kijken welke van de principes get beste bij mijn project passen en deze ga ik dan verder onderzoeken en wat dieper uitwerken.
+
+[Naar bestand]()
+
 ### 3.2 Agile
 
 Agile is een heel belangrijk concept in de software engineering. Dit is ook in het gehele semester toegepast om makkelijker, sneller en overzichtelijker te werken. Om te weten wat agile precies inhoud en wat de verschillende frameworks op agile zijn heb ik hier een onderzoekje naar gedaan. In dit semester heb ik voornamelijk scrum gebruikt maar in het onderzoek staat ook nog andere framworks.

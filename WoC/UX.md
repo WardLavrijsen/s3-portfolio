@@ -26,8 +26,11 @@
       - [Design 5](#design-5)
       - [Design 6](#design-6)
     - [Het gekozen design](#het-gekozen-design)
+  - [Verdere veranderingen](#verdere-veranderingen)
+    - [Adminpagina](#adminpagina)
     - [Feedback van de designers van World of Content](#feedback-van-de-designers-van-world-of-content)
   - [Development](#development)
+  - [Reflectie](#reflectie)
 
 ## Hoe gaat het UX-proces te werk?
 
@@ -235,6 +238,26 @@ Gezien de info die we uit de userstorys hebben gekregen en de verschillende inte
 
 ![Design 2](../images/WoC-Design2-new.png)
 
+## Verdere veranderingen
+
+Natuurlijk hoort bij UX ook het veranderen van de designs naar de nieuwe requirements. Dit is natuurlijk heel vaak gebeurt. Denk bij deze veranderen aan kleine dingetjes:
+
+- Border Radius bij alle verschillende elemeten erbij zetten.
+- Knoppen andere kleuren geven dat ze wat meer opvallen. Denk hierbij aan de knoppen die je kan gebruiken om de data te filteren.
+- Alle tekst engels maken.
+- pagination weghalen bij 1 pagina
+
+Maar ook een hebben we een aantal hele grote dingen aangepast. Denk hierbij aan:
+
+- Een gehele adminpagina
+- De productpagina aanpassen zodat er meerdere grafieken zijn.
+
+### Adminpagina
+
+De admin pagina moet uit verschillende onderdelen bestaan. Zo moet er een pagina zijn waar je de brands kan zien en aanpassen, De retailers kunnen zien en aanpassen, de informatie van de scraper kunnen zien en de verschillende instellingen kunnen aanpassen. Deze paginas zijn hieronder te zien.
+
+![Admin pagina](../images/AdminPanel.jpg)
+
 ### Feedback van de designers van World of Content
 
 Na het maken van de designs zijn deze naar de designers van world of content gestuurd. Zij hebben feedback gegeven op de designs. Deze feedback is hieronder te zien.
@@ -246,3 +269,9 @@ Na het ontvangen van de feedback hebben we de designs aangepast en hebben we een
 ## Development
 
 De development is gedaan in Next.js. Dit is een framework die we al kenden en waar we ook al ervaring mee hadden. Dit is ook een framework die we in de toekomst nog wel eens zouden kunnen gebruiken. Daarnaast is het ook een framework die we goed kunnen gebruiken voor het maken van een prototype.
+
+## Reflectie
+
+Ux is een onderdeel waar ik super veel tijd aan heb besteed. Ik heb echt wel heel veel geleerd door dit te doen. Ook heb ik samengewerkt met de designers van world of content. Hierdoor heb ik veel geleerd over het maken van designs en hoe je dit het beste kan doen. Ik hoop dat ik dit in de toekomst nog veel kan gebruiken.
+
+Er zijn natuurlijk nog dingen die verbeterd kunnen worden. Zo zou op de adminpagina het settings blokje weg kunnen op het moment dat je bij bijvoorbeeld brands bent. Het leuke aan UI/UX is ook dat het constant verandert op dezelfde manier als je code veranderd. Dit zorgt voor meerdere iteraties en dat je een goede connectie met je bedrijf kan maken.

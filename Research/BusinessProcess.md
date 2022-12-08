@@ -17,7 +17,9 @@
     - [3.3 Execute](#33-execute)
     - [3.4 Monitor](#34-monitor)
     - [3.5 Optimize](#35-optimize)
-  - [4. Mijn Business proces](#4-mijn-business-proces)
+  - [4. Mijn Business processen](#4-mijn-business-processen)
+    - [4.1 individueel project](#41-individueel-project)
+    - [4.2 Groepsopdracht](#42-groepsopdracht)
 
 ## 1. Wat is een business proces?
 
@@ -40,7 +42,9 @@ Verschillende soorten business processen zijn:
     - [3.3 Execute](#33-execute)
     - [3.4 Monitor](#34-monitor)
     - [3.5 Optimize](#35-optimize)
-  - [4. Mijn Business proces](#4-mijn-business-proces)
+  - [4. Mijn Business processen](#4-mijn-business-processen)
+    - [4.1 individueel project](#41-individueel-project)
+    - [4.2 Groepsopdracht](#42-groepsopdracht)
 
 ### 1.1. Operationele processen
 
@@ -114,7 +118,9 @@ In de monitor fase wordt er gekeken of het business proces goed werkt. Dit door 
 
 In de optimize fase wordt er gekeken hoe het business proces verbeterd kan worden. Dit wordt gedaan door middel van het analyseren van de KPI. Als de KPI niet goed is, dan wordt er gekeken waar het probleem zit en wordt er gekeken hoe het probleem opgelost kan worden.
 
-## 4. Mijn Business proces
+## 4. Mijn Business processen
+
+### 4.1 individueel project
 
 Mijn business proces is het gebruiken van externe partijen om tickets op te halen en deze zo snel mogelijk aan klanten laten zien.
 
@@ -125,3 +131,13 @@ Daarnaast worden nieuwe wedstrijden of wijzigingen in wedstrijden vanuit een ext
 Als alles goed is wordt deze data samengevoegd en wordt er een offerte aangemaakt. En deze wordt naar de klant gestuurd.
 
 ![Business process](../images/Business-process-fast.png)
+
+### 4.2 Groepsopdracht
+
+Voor de groepsopdracht hebben we 2 proccessen gemaakt. 1 is het starten van de sraper en hoe deze werkt. En de andere naar het opvragen van productdata op de website.
+
+![Business process](../images/Business_scraper.png)
+_Het business proces van de scraper_
+
+![Business process](../images/Business_website.png)
+_Het business proces van de website_
