@@ -11,6 +11,8 @@
   - [4. Unit Testen externe API](#4-unit-testen-externe-api)
   - [4. Integration Testing](#4-integration-testing)
   - [4. Static code analysis](#4-static-code-analysis)
+  - [5. End-to-end testen](#5-end-to-end-testen)
+    - [Cypress](#cypress)
 
 ## 1. Wat is Software Quality Assurance?
 
@@ -101,3 +103,57 @@ Het grootste voordeel hieraan is dat op het moment dat ik de code push naar gith
 
 ![Github CI](../images/StaticCodeGithub.jpg)
 _Hier is te zien wat er bij deze CI fout ging._
+
+## 5. End-to-end testen
+
+End-to-end tests zijn een vorm van softwaretests waarbij de volledige applicatie wordt getest in een situatie die het gebruik in de praktijk simuleert. Deze vorm van testen is bedoeld om de prestaties van een applicatie van begin tot eind te evalueren, inclusief alle componenten en subcomponenten, om ervoor te zorgen dat deze goed functioneert en aan de door het ontwikkelingsteam gestelde eisen voldoet.
+
+Een van de belangrijkste voordelen van end-to-end testen is dat het kan helpen bij het identificeren van problemen die misschien niet onmiddellijk opvallen bij het testen van individuele componenten of subcomponenten van een applicatie. Een unit test kan bijvoorbeeld alleen een specifieke functie of module van een applicatie testen, terwijl een integratietest alleen test hoe verschillende componenten op elkaar inwerken. Een end-to-end test zal echter het hele systeem evalueren, inclusief alle componenten en subcomponenten, om ervoor te zorgen dat ze samen goed functioneren.
+
+Een ander voordeel van end-to-end testen is dat het kan helpen problemen op te sporen die het gevolg zijn van wijzigingen die tijdens het ontwikkelingsproces in de applicatie zijn aangebracht. Aangezien softwareontwikkelingsteams tijdens het ontwikkelingsproces vaak wijzigingen in een applicatie aanbrengen, is het belangrijk om regelmatig het hele systeem te testen om ervoor te zorgen dat deze wijzigingen geen nieuwe bugs of problemen introduceren. Door end-to-end tests uit te voeren, kunnen ontwikkelaars eventuele problemen opvangen die door wijzigingen in de applicatie zijn geïntroduceerd en stappen ondernemen om deze op te lossen voordat de applicatie wordt vrijgegeven.
+
+Hoewel end-to-end testen een waardevol hulpmiddel kunnen zijn om problemen in een applicatie te identificeren en op te lossen, is het belangrijk om te onthouden dat het geen vervanging is voor andere soorten testen. Unit- en integratietests zijn nog steeds belangrijk om problemen op componentniveau op te sporen, en moeten naast end-to-end tests worden uitgevoerd. Bovendien kunnen end-to-end tests veel tijd en middelen kosten, dus het is belangrijk dat ontwikkelteams hun end-to-end tests zorgvuldig plannen en prioriteren om ervoor te zorgen dat ze de belangrijkste problemen kunnen opvangen zonder de release van de applicatie te vertragen.
+
+Al met al is end-to-end testen een waardevol instrument om de kwaliteit en betrouwbaarheid van een applicatie te waarborgen. Door het gebruik in de echte wereld te simuleren en de prestaties van het hele systeem te evalueren, kunnen end-to-end tests problemen aan het licht brengen die bij andere soorten tests misschien niet aan het licht komen, en ervoor zorgen dat een applicatie klaar is voor release.
+
+### Cypress
+
+Cypress is een op JavaScript gebaseerd end-to-end framework. Het is ontworpen om het ontwikkelaars gemakkelijk te maken tests voor hun toepassingen te maken en uit te voeren. Het biedt een gebruiksvriendelijke interface voor het uitvoeren en debuggen van tests. Cypress een populaire keuze voor end-to-end testen, vanwege het gebruiksgemak en de krachtige functies.
+
+Ik heb mijn end-to-end testen gemaakt met Cypress.
+Dit is een hele simpele voorbeeldtest met Cypress in react.
+
+```javascript
+describe("Is LaLiga available", () => {
+  it("passes", () => {
+    cy.visit("http://localhost:3000");
+    cy.contains("La Liga").click();
+  });
+});
+```
+
+Daarnaast heb ik het toegevoegd aan mijn github action om de testen automatisch te laten uitvoeren.
+
+```yaml
+cypress-run:
+  runs-on: ubuntu-latest
+  steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    # Install NPM dependencies, cache them correctly
+    # and run all Cypress tests
+    - name: Cypress run
+      uses: cypress-io/github-action@v4 # use the explicit version number
+      with:
+        build: npm run build
+        start: npm start
+        record: true
+      env:
+        CYPRESS_RECORD_KEY: ${{secrets.CYPRESS_CLOUD}}
+        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+```
+
+Ook maak ik gebruik van een hele handige tool genaamd cypress cloud. Dit is een extra stap in het CI/CD process maar zorgt ervoor dat naast alle sonarcloud data ook de cypress testdata naar de cloud wordt gestuurd zodat je het makkelijk kan zien.
+
+![Cypress cloud](../images/CypressCloud.jpg)
+_Hier is te zien wat Cypress bijhoudt._
