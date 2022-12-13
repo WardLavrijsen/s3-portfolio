@@ -54,9 +54,6 @@ Om dit te testen heb ik gebruik gemaakt van een test repository en een interface
         List<Game> beforeGames = gameService.allGames();
         gameService.addGames("1", "3");
         List<Game> afterGames = gameService.allGames();
-
-        System.out.println(beforeGames.stream().count());
-        System.out.println(afterGames.stream().count());
     }
 ```
 
@@ -106,15 +103,11 @@ _Hier is te zien wat er bij deze CI fout ging._
 
 ## 5. End-to-end testen
 
-End-to-end tests zijn een vorm van softwaretests waarbij de volledige applicatie wordt getest in een situatie die het gebruik in de praktijk simuleert. Deze vorm van testen is bedoeld om de prestaties van een applicatie van begin tot eind te evalueren, inclusief alle componenten en subcomponenten, om ervoor te zorgen dat deze goed functioneert en aan de door het ontwikkelingsteam gestelde eisen voldoet.
+End-to-end tests zijn een vorm van softwaretests waarbij de volledige applicatie wordt getest. Deze vorm van testen is bedoeld om de prestaties van een applicatie van begin tot eind te evalueren.
 
-Een van de belangrijkste voordelen van end-to-end testen is dat het kan helpen bij het identificeren van problemen die misschien niet onmiddellijk opvallen bij het testen van individuele componenten of subcomponenten van een applicatie. Een unit test kan bijvoorbeeld alleen een specifieke functie of module van een applicatie testen, terwijl een integratietest alleen test hoe verschillende componenten op elkaar inwerken. Een end-to-end test zal echter het hele systeem evalueren, inclusief alle componenten en subcomponenten, om ervoor te zorgen dat ze samen goed functioneren.
+Een van de belangrijkste voordelen van end-to-end testen is dat het kan helpen bij het identificeren van problemen die misschien niet onmiddellijk opvallen bij het testen van individuele componenten of subcomponenten van een applicatie. Een unit test kan bijvoorbeeld alleen een specifieke functie of module van een applicatie testen, terwijl een integratietest alleen test hoe verschillende componenten op elkaar inwerken.
 
-Een ander voordeel van end-to-end testen is dat het kan helpen problemen op te sporen die het gevolg zijn van wijzigingen die tijdens het ontwikkelingsproces in de applicatie zijn aangebracht. Aangezien softwareontwikkelingsteams tijdens het ontwikkelingsproces vaak wijzigingen in een applicatie aanbrengen, is het belangrijk om regelmatig het hele systeem te testen om ervoor te zorgen dat deze wijzigingen geen nieuwe bugs of problemen introduceren. Door end-to-end tests uit te voeren, kunnen ontwikkelaars eventuele problemen opvangen die door wijzigingen in de applicatie zijn geïntroduceerd en stappen ondernemen om deze op te lossen voordat de applicatie wordt vrijgegeven.
-
-Hoewel end-to-end testen een waardevol hulpmiddel kunnen zijn om problemen in een applicatie te identificeren en op te lossen, is het belangrijk om te onthouden dat het geen vervanging is voor andere soorten testen. Unit- en integratietests zijn nog steeds belangrijk om problemen op componentniveau op te sporen, en moeten naast end-to-end tests worden uitgevoerd. Bovendien kunnen end-to-end tests veel tijd en middelen kosten, dus het is belangrijk dat ontwikkelteams hun end-to-end tests zorgvuldig plannen en prioriteren om ervoor te zorgen dat ze de belangrijkste problemen kunnen opvangen zonder de release van de applicatie te vertragen.
-
-Al met al is end-to-end testen een waardevol instrument om de kwaliteit en betrouwbaarheid van een applicatie te waarborgen. Door het gebruik in de echte wereld te simuleren en de prestaties van het hele systeem te evalueren, kunnen end-to-end tests problemen aan het licht brengen die bij andere soorten tests misschien niet aan het licht komen, en ervoor zorgen dat een applicatie klaar is voor release.
+Een ander voordeel van end-to-end testen is dat het kan helpen problemen op te sporen die het gevolg zijn van wijzigingen die tijdens het ontwikkelingsproces in de applicatie zijn aangebracht. Het is belangrijk om regelmatig het hele systeem te testen om ervoor te zorgen dat deze wijzigingen geen nieuwe bugs of problemen introduceren. Door end-to-end tests uit te voeren, kunnen ontwikkelaars eventuele problemen opvangen die door wijzigingen in de applicatie zijn geïntroduceerd en stappen ondernemen om deze op te lossen voordat de applicatie wordt vrijgegeven.
 
 ### Cypress
 
