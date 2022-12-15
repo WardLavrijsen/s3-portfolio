@@ -22,8 +22,9 @@ Leraren: Marc van Grootel en Marc van Heumen
   - [3 Onderzoek](#3-onderzoek)
     - [3.1 Dot Framework Security](#31-dot-framework-security)
     - [3.2 Agile](#32-agile)
-    - [3.3 Dot Framework](#33-dot-framework)
+    - [3.3 Dot Framework Testen](#33-dot-framework-testen)
     - [3.4 Business processes](#34-business-processes)
+    - [3.5 Culturel differences and ethics](#35-culturel-differences-and-ethics)
   - [4 Indiviudueel project](#4-indiviudueel-project)
     - [4.1 Projectomscrijving](#41-projectomscrijving)
     - [4.2 Waarom dit project:](#42-waarom-dit-project)
@@ -43,7 +44,7 @@ Leraren: Marc van Grootel en Marc van Heumen
     - [5.6 Profesionele bijdrage](#56-profesionele-bijdrage)
   - [6 Reflectie](#6-reflectie)
     - [6.1 Wat heb ik geleerd?](#61-wat-heb-ik-geleerd)
-    - [6.2 Wat kan ik beter doen?](#62-wat-kan-ik-beter-doen)
+    - [6.2 Waar ben ik trots op?](#62-waar-ben-ik-trots-op)
     - [6.3 Voortgang](#63-voortgang)
 
 ## 1. Inleiding
@@ -94,15 +95,7 @@ You design a release process and implement a continuous integration and deployme
 
 ### 2.5 You recognize and take into account cultural differences between project stakeholders and ethical aspects in software development.
 
-**Recognize:**
-Recognition is based on theoretically substantiated awareness of cultural differences and ethical aspects in software engineering.
-
-- [Link](#project-1)
-
-**Take into account:**
-Adapt your communication, working, and behavior styles to reflect project stakeholders from different cultures; Address one of the standard Programming Ethical Guidelines (e.g., ACM Code of Ethics and Professional Conduct) in your work.
-
-- [Link](#project-1)
+- [Cultural difference and ethics](#35-culturel-differences-and-ethics)
 
 ### 2.6 You analyze (non-functional) requirements, elaborate (architectural) designs and validate them using multiple types of test techniques.
 
@@ -144,7 +137,11 @@ Agile is een heel belangrijk concept in de software engineering. Dit is ook in h
 
 [Naar bestand](Research/Agile.md)
 
-### 3.3 Dot Framework
+### 3.3 Dot Framework Testen
+
+In dit onderzoek ga ik onderzoek doen naar testen. Ik ga kijken wat de verschillende soorten testen zijn en wat de verschillen zijn tussen deze testen.
+
+[Naar bestand](Research/SoftwareTesting.md)
 
 ### 3.4 Business processes
 
@@ -153,6 +150,12 @@ Hierin heb ik business processes onderzocht en hoe deze in de software engineeri
 Daarnaast heb ik hier mijn eigen business process uitgewerkt. Dit is het business process van mijn individuele project.
 
 [Naar bestand](Research/BusinessProcess.md)
+
+### 3.5 Culturel differences and ethics
+
+Ik heb een onderzoek gedaan naar de verschillende culturele verschillen en hoe je hier mee om moet gaan. Ook heb ik een onderzoek gedaan naar de verschillende ethische aspecten in de software engineering.
+
+[Naar bestand](Research/Cultural%20differences%20and%20ethics.md)
 
 ## 4 Indiviudueel project
 
@@ -267,64 +270,19 @@ Doordat ik de UX van dit project heb gedaan heb ik veel met Tom (de stakeholder 
 
 ### 6.1 Wat heb ik geleerd?
 
-Wat ik geleerd heb dit semester is het maken van software op een hele andere manier. Om te beginnen het Agile werken. Dit heeft me op een hele andere manier leren werken en persoonlijk vind ik dit een veel betere manier. Daarnaast bepaalde aspecten als distibuted software, CI/CD en UX. Dit zijn allemaal aspecten die ik nog niet eerder had gezien en die ik nu wel kan toepassen in mijn werk. Dit is erg waardevol voor mij. Wetende dat dit allemaal belangrijk is voor mijn eigen ontwikkeling en de software die ik maak.
+Wat ik geleerd heb dit semester is het maken van software op een hele andere manier. Om te beginnen het Agile werken. Dit heeft me op een hele andere manier leren werken en persoonlijk vind ik dit een veel betere manier. Daarnaast bepaalde aspecten als distibuted software, CI/CD en UX. Dit zijn allemaal aspecten die ik nog niet eerder had gezien en die ik nu wel kan toepassen in mijn werk.
 
-### 6.2 Wat kan ik beter doen?
+### 6.2 Waar ben ik trots op?
 
-Mijn aandacht verdelen over meerdere leeruitkomsten en niet al te diep in gaan op een leeruitkomst. Ik heb dit semester veel geleerd en ik wil dit graag in de praktijk brengen. Ik wil mijzelf meer gaan verdiepen in de technieken die ik heb geleerd en deze ook gaan toepassen in mijn werk.
+Ik ben erg trots op het UI/UX procces dat ik heb doorlopen. Ik ben hier veel tijd in gaan steken en het heeft geleid tot een design waar we het allemaal mee eens zijn.
+
+Daarnaast heb ik de gehele frontend gemaakt en dit heeft me erg veel tijd gekost en samen met het UI/UX procces heb ik hier erg veel stappen in gemaakt.
+
+Daarnaast ben ik trots op de manier hoe ik ben omgegaan met het CI/CD proces. Toen ik dit voor het eerst tegenkwam dit semester was ik erg enthousiast om dit te leren. Ik vond het erg fasinerend. Hier heb ik ook veel tijd in gestoken en was ook de eerste van de groep met een werkende CI/CD pipeline. Dit is ook een van de dingen waar ik erg trots op ben.
 
 ### 6.3 Voortgang
 
-**Leeruitkomst 1: Web application**
+Hier geef ik aan wat ik vind dat ik voor de leeruitkomsten sta op verschillende momenten
 
-**Beginning**
-
-Op het gebied van UI/UX zou ik mijzelf zeker een Proficient geven. Dit omdat ik tijdens het maken van het groepsproject voor World Of Content hier erg veel tijd in het gestoken heb. Na dit procces zijn we tot een erg goed ui gekomen.
-
-Voor Full Stack application zou ik mijzelf een Beginner geven. Ik ben begonnen met het maken van de full stack maar door veel uitzoeken en tijd spenderen aan andere leeruitkomsten heb ik minder tijd in de daadwerkelijke applicatie gestoken. Dit is wel een focus voor mij voor de komende sprints.
-
-**Leeruitkomst 2: Software quality**
-
-**Orienting**
-
-Ik heb onderzoek gedaan naar de verschillende typen van testen maar wil eerst de CI/CD goed verwerkt hebben voor ik mijzelf hier op ga focusen.
-
-**Leeruitkomst 3: Agile method**
-
-**Proficient**
-
-Door het geven van een workshop en het onderzoek hiervan heb ik veel geleerd over agile en de verschillende methoden. Ik weet nu wat alles is en hoe ik alles moet toepassen.
-
-**Leeruitkomst 4: CI/CD**
-
-**Beginning**
-
-Voor CI/CD geef ik mezelf beginning omdat ik veel aandacht heb gespendeerd aan het onderzoeken en implementeren van CI/CD. Doordat ik moet mezelf nog foccusen op de CD van de backend en dit implementeren met docker. Ook moet ik nog testen toevoegen.
-
-**Leeruitkomst 5: Cultural differences and ethics**
-
-**Undefined**
-
-Ik heb voor deze leeruitkomt nog helemaal niks gedaan. Dit is een leeruitkomst die ik nog moet oppakken.
-
-**Leeruitkomst 6: Requirements and design**
-
-**Orienting**
-
-Ik heb hiernaar gekeken maar nog niet genoeg gedaan. Ik heb zeker nagedacht over architectuur en verschillende non functional requirements maar moet hier nog wel meer voor gaan doen.
-
-**Leeruitkomst 7: Business processes**
-
-**Undefined**
-
-Nog helemaal niks voor gedaan.
-
-**Leeruitkomst 8: Professional**
-
-**Proficient**
-
-Tijdens zowel het groepsproject als mijn individule project zorg ik voor een goede communicatie met de klant. Dit doen we in het groepsproject met World Of Content. Ook weten wij als groep van elkaar wat we kunnen verwachten en dit zorgt voor een goede fijne samenwerking.
-
-Voor mijn individuele opdracht heb ik een project gekozen voor het bedrijf van mijn vader. Hierdoor heb ik regelmatig met mijn vader gesproken over requirements en wat hij precies wilde. Dit zorgt voor een goede communicatie en een goede samenwerking.
-
-Daarom dat ik mijzelf Proficient geef voor deze leeruitkomst.
+- [3 November 2022](Reflection/3-november-2022.md)
+- [15 December 2022](Reflection/15-december-2022.md)

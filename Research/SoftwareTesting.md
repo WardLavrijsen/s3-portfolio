@@ -22,10 +22,9 @@
     - [5.9 Usability Testing](#59-usability-testing)
     - [5.10 Compatibility Testing](#510-compatibility-testing)
     - [5.11 Stress tests](#511-stress-tests)
-  - [6. Waar gebruik je welke testen?](#6-waar-gebruik-je-welke-testen)
-  - [7. Welke testen zijn handig voor mijn applicatie?](#7-welke-testen-zijn-handig-voor-mijn-applicatie)
-  - [9. Conclusie](#9-conclusie)
-  - [10. Bronnen](#10-bronnen)
+  - [6. Welke testen zijn handig voor mijn applicatie?](#6-welke-testen-zijn-handig-voor-mijn-applicatie)
+  - [7. Conclusie](#7-conclusie)
+  - [8. Bronnen](#8-bronnen)
 
 ## 1. Inleiding
 
@@ -168,9 +167,23 @@ Load Testing is een softwaretestproces waarbij de prestaties van een softwareapp
 
 ### 5.8 Security Testing
 
+Security testing is het testen van een computersysteem, netwerk of webapplicatie om kwetsbaarheden op te sporen die een aanvaller zou kunnen uitbuiten. Deze kwetsbaarheden kunnen vele vormen aannemen, zoals zwakke wachtwoorden, ongepatchte software of onbeschermde poorten.
+
+Het uitvoeren van beveiligingstests is essentieel om de vertrouwelijkheid, integriteit en beschikbaarheid van een systeem te waarborgen. Vertrouwelijkheid verwijst naar de bescherming van gevoelige gegevens, zoals financiële informatie of persoonlijke dossiers, tegen ongeoorloofde toegang. Integriteit heeft betrekking op de nauwkeurigheid en volledigheid van gegevens, en zorgt ervoor dat er niet mee geknoeid of geknoeid is.
+
+Een van de belangrijkste uitdagingen van beveiligingstests is dat ze regelmatig moeten worden uitgevoerd om effectief te blijven. Dit komt doordat er voortdurend nieuwe kwetsbaarheden worden ontdekt en aanvallers voortdurend nieuwe methoden ontwikkelen om deze te misbruiken. Daarom moeten beveiligingstests een continu proces zijn om ervoor te zorgen dat een systeem veilig blijft.
+
+Naast de technische aspecten van beveiligingstests zijn er ook belangrijke menselijke factoren waarmee rekening moet worden gehouden. Zo kunnen de opleiding en het bewustzijn van gebruikers een cruciale rol spelen bij de beveiliging van een systeem. Door gebruikers voor te lichten over veilige wachtwoordpraktijken, het belang van het up-to-date houden van software en de mogelijke gevolgen van een cyberaanval, kan de kans op een succesvolle aanval worden verkleind.
+
 ### 5.9 Usability Testing
 
+Usability testen, ook bekend als User Experience (UX) Testing, is een testmethode om te meten hoe gemakkelijk en gebruiksvriendelijk een softwareapplicatie is. Een kleine groep eindgebruikers gebruikt de software om gebreken in de bruikbaarheid aan het licht te brengen. Bij het testen van de bruikbaarheid wordt vooral gekeken naar het gebruiksgemak van de applicatie, de flexibiliteit van de applicatie en de mate waarin de applicatie aan de doelstellingen voldoet.
+
 ### 5.10 Compatibility Testing
+
+Compatibiliteitstests zijn een soort softwaretests die worden gebruikt om ervoor te zorgen dat een bepaald stuk software compatibel is met verschillende hardware, software, besturingssystemen en netwerkomgevingen. Deze vorm van testen is belangrijk omdat software vaak in verschillende omgevingen wordt gebruikt, en het is essentieel dat de software in al deze omgevingen correct functioneert.
+
+Om deze uitdaging aan te gaan, worden bij compatibiliteitstests vaak automatiseringstools gebruikt die kunnen helpen om een stuk software snel en efficiënt te testen in een groot aantal omgevingen. Deze tools kunnen worden geconfigureerd om dezelfde tests op meerdere omgevingen uit te voeren, wat tijd en moeite bespaart. Daarnaast kunnen compatibiliteitstests ook handmatige tests omvatten, waarbij menselijke testers de software handmatig in verschillende omgevingen uitvoeren en controleren op eventuele problemen of bugs.
 
 ### 5.11 Stress tests
 
@@ -192,17 +205,33 @@ Stress testen is ook uiterst waardevol om de volgende redenen:
 - Systeemfalen onder extreme omstandigheden kan resulteren in een enorm inkomstenverlies.
 - Het is beter om voorbereid te zijn op extreme omstandigheden door Stress Testing uit te voeren.
 
-## 6. Waar gebruik je welke testen?
+## 6. Welke testen zijn handig voor mijn applicatie?
+
+Ik heb een applicatie waain je competities kan opvragen, hierbij clubs kan opslaan, wedstrijden kan bekijken en hierbij de verschillende prijzen.
+
+De verschillende testen die handig zijn om toe te voegen aan mijn applicatie zijn.
+
+- Unit testen
+- Integration testen
+- End-to-end testen
+- Performance Testing
+- Usability Testing
+- Compatibility Testing
+- Stress testing
+
+Hoe ik deze heb geinplementeerd lees je [hier]("../../../FAST/SoftwareQualityInsurence.md")
 
 ![Meme over software testen](https://mailtrap.io/wp-content/uploads/2020/06/testing_meme3.png)
 
-## 7. Welke testen zijn handig voor mijn applicatie?
-
-## 9. Conclusie
+## 7. Conclusie
 
 > **Welke soorten testen zijn er en hoe kan ik deze in mijn applicatie gebruiken**
 
-## 10. Bronnen
+Het testen van software is een cruciale stap in het ontwikkelingsproces van elk softwareproduct. Het helpt ervoor te zorgen dat het product van hoge kwaliteit is en vrij van gebreken, waardoor het betrouwbaarder en gebruiksvriendelijker wordt. Door het product grondig te testen voordat het wordt vrijgegeven, kunnen ontwikkelaars eventuele problemen opsporen en oplossen, wat resulteert in een betere algemene ervaring voor gebruikers.
+
+Daarnaast ga ik meerdere soorten testen toevoegen zodat mijn applicatie beschermt is tegen verschillende soorten bugs.
+
+## 8. Bronnen
 
 - [Canvas Software Testen](https://fhict.instructure.com/courses/12517/pages/testing-what-when-and-where?module_item_id=835976)
 - [Wikipedia Software Testen](https://en.wikipedia.org/wiki/Software_testing)
@@ -219,3 +248,4 @@ Stress testen is ook uiterst waardevol om de volgende redenen:
 - [circleCI e2e](https://circleci.com/blog/what-is-end-to-end-testing/)
 - [guru Load testing](https://www.guru99.com/load-testing.html)
 - [guru performance testing](https://www.guru99.com/performance-testing.html)
+- [guru compatibility testing](https://www.guru99.com/compatibility-testing.html)
