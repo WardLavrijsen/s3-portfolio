@@ -26,6 +26,7 @@ Leraren: Marc van Grootel en Marc van Heumen
     - [3.4 Business processes](#34-business-processes)
     - [3.5 Culturel differences and ethics](#35-culturel-differences-and-ethics)
   - [4 Indiviudueel project](#4-indiviudueel-project)
+    - [Link Website Project](#link-website-project)
     - [4.1 Projectomscrijving](#41-projectomscrijving)
     - [4.2 Waarom dit project:](#42-waarom-dit-project)
     - [4.3 Agile](#43-agile)
@@ -160,6 +161,8 @@ Ik heb een onderzoek gedaan naar de verschillende culturele verschillen en hoe j
 ## 4 Indiviudueel project
 
 ![Logo Forza](images/ForzaLogo.jpg)
+
+### [Link Website Project](https://fasthosting-52346.web.app/)
 
 ### 4.1 Projectomscrijving
 
