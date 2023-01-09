@@ -5,14 +5,17 @@
 - [Software Quality Assurance](#software-quality-assurance)
   - [Inhoudsopgave](#inhoudsopgave)
   - [1. Wat is Software Quality Assurance?](#1-wat-is-software-quality-assurance)
-    - [2 Automatiseren](#2-automatiseren)
-  - [2.1 CI/CD](#21-cicd)
+  - [2 Automatiseren](#2-automatiseren)
+    - [2.1 CI/CD](#21-cicd)
   - [3. Unit Testing](#3-unit-testing)
   - [4. Unit Testen externe API](#4-unit-testen-externe-api)
   - [4. Integration Testing](#4-integration-testing)
   - [4. Static code analysis](#4-static-code-analysis)
   - [5. End-to-end testen](#5-end-to-end-testen)
-    - [Cypress](#cypress)
+    - [5.2 Cypress](#52-cypress)
+  - [6. Load / Stress testen](#6-load--stress-testen)
+  - [7. Performance testen](#7-performance-testen)
+  - [8. Conclusie](#8-conclusie)
 
 ## 1. Wat is Software Quality Assurance?
 
@@ -22,11 +25,11 @@ We maken software voor anderen. Hoogst waarschijnlijk degene die ervoor betalen.
 
 ![Software Quality Assurance](https://mailtrap.io/wp-content/uploads/2020/06/testing_meme12.jpg)
 
-### 2 Automatiseren
+## 2 Automatiseren
 
 Als je constant al deze verschillende testen zou moeten doen ben je voor eeuwig bezig. Daarom is het super handig om dit te automatiseren. Je kunt dit doen door middel van een CI/CD pipeline.
 
-## 2.1 CI/CD
+### 2.1 CI/CD
 
 CI/CD staat voor Continuous Integration en Continuous Deployment. Doormiddel van de CI/CD kunnen alle vormen van QA worden toegepast in mijn code en het allerbelangrijkste is dat door de CI/CD dit allemaal automatisch wordt getest.
 
@@ -109,7 +112,7 @@ Een van de belangrijkste voordelen van end-to-end testen is dat het kan helpen b
 
 Een ander voordeel van end-to-end testen is dat het kan helpen problemen op te sporen die het gevolg zijn van wijzigingen die tijdens het ontwikkelingsproces in de applicatie zijn aangebracht. Het is belangrijk om regelmatig het hele systeem te testen om ervoor te zorgen dat deze wijzigingen geen nieuwe bugs of problemen introduceren. Door end-to-end tests uit te voeren, kunnen ontwikkelaars eventuele problemen opvangen die door wijzigingen in de applicatie zijn geïntroduceerd en stappen ondernemen om deze op te lossen voordat de applicatie wordt vrijgegeven.
 
-### Cypress
+### 5.2 Cypress
 
 Cypress is een op JavaScript gebaseerd end-to-end framework. Het is ontworpen om het ontwikkelaars gemakkelijk te maken tests voor hun toepassingen te maken en uit te voeren. Het biedt een gebruiksvriendelijke interface voor het uitvoeren en debuggen van tests. Cypress een populaire keuze voor end-to-end testen, vanwege het gebruiksgemak en de krachtige functies.
 
@@ -150,3 +153,96 @@ Ook maak ik gebruik van een hele handige tool genaamd cypress cloud. Dit is een 
 
 ![Cypress cloud](../images/CypressCloud.jpg)
 _Hier is te zien wat Cypress bijhoudt._
+
+## 6. Load / Stress testen
+
+Voor de load / stress testen (eigenlijk hetzelfde) heb ik gebruik gemaakt van artillery. Dit is een command line tool waarmee ik mijn applicatie kan testen onder een bepaalde load. Dus een hele hoop requesten tegelijk.
+
+Hier is te zien hoe een script van artillery eruit ziet
+
+```yaml
+config:
+  target: "http://127.0.0.1:3000/"
+  phases:
+    - duration: 600
+      arrivalRate: 50
+    - duration: 60
+      arrivalRate: 5
+      name: Warm up
+    - duration: 120
+      arrivalRate: 5
+      rampTo: 50
+      name: Ramp up load
+    - duration: 600
+      arrivalRate: 50
+      name: Sustained load
+  ensure:
+    maxErrorRate: 1
+    max: 500
+
+scenarios:
+  - name: "Get Clubs"
+    flow:
+      - get:
+          url: "/"
+```
+
+Door dit te doen krijg ik inzicht in mijn applicatie en wat het wel en niet kan handlen. Dit is een hele handige tool om te gebruiken.
+
+Zo komt de data eruit en is te zien dat het allemaal goed verloopt onder load / stress
+
+![Artillery](../images/artillery-show.png)
+
+## 7. Performance testen
+
+Een hele handige manier om performance testen uit te voeren is met de in browser gebouwde tool genaamd lighthouse. Dit is dan ook waar ik gebuik van heb gemaakt.
+
+Ik heb een script die in de frontend runt.
+
+```js
+const lighthouse = require("lighthouse");
+const chromeLauncher = require("chrome-launcher");
+const fs = require("fs");
+
+(async () => {
+  const chrome = await chromeLauncher.launch({ chromeFlags: ["--headless"] });
+  const options = {
+    logLevel: "info",
+    output: "html",
+    // onlyCategories: ["performance"],
+    port: chrome.port,
+  };
+  const runnerResult = await lighthouse("http://localhost:3000", options);
+
+  console.log("Report is done for", runnerResult.lhr.finalUrl);
+
+  const performanceScore = runnerResult.lhr.categories.performance.score * 100;
+  console.log("Performance score was", performanceScore);
+
+  const reportHtml = runnerResult.report;
+  fs.writeFileSync("lhreport.html", reportHtml);
+
+  await chrome.kill();
+})();
+```
+
+Hieruit volgt dan een score
+
+![Lighthouse score](../images/lighthouseScore.jpg)
+
+[Link naar lighthouse report](../images/lighthouseScore.pdf)
+
+## 8. Conclusie
+
+Door alle deze testen te doen ben ik erachter gekomen hoe belangrijk het eigenlijk wel niet is om je code te testen. Nooit eerder in mijn projecten heb ik hier bij stil gestaan maar nu denk ik er veel anders over.
+
+Zo heb ik verschillende soorten Quality Assurance toegevoegd:
+
+- Unit testen
+- Integration testen
+- end-to-end testen
+- load / stress testen
+- performance testen
+- static code analysis
+
+Door dit allemaal toe te passen heb ik allerlei verschillende manier en vormen van testen geleerd en hoe ik deze kan integreren in mijn applicatie.

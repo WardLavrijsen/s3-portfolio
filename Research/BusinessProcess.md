@@ -20,6 +20,8 @@
   - [4. Mijn Business processen](#4-mijn-business-processen)
     - [4.1 individueel project](#41-individueel-project)
     - [4.2 Groepsopdracht](#42-groepsopdracht)
+  - [5. Conclusie](#5-conclusie)
+    - [5.1 Wat heb ik geleerd?](#51-wat-heb-ik-geleerd)
 
 ## 1. Wat is een business proces?
 
@@ -45,6 +47,8 @@ Verschillende soorten business processen zijn:
   - [4. Mijn Business processen](#4-mijn-business-processen)
     - [4.1 individueel project](#41-individueel-project)
     - [4.2 Groepsopdracht](#42-groepsopdracht)
+  - [5. Conclusie](#5-conclusie)
+    - [5.1 Wat heb ik geleerd?](#51-wat-heb-ik-geleerd)
 
 ### 1.1. Operationele processen
 
@@ -79,6 +83,8 @@ Ook zie je een verschil in de groote en de complexiteit van de business processe
 ## 2. Wat heeft een buisness proces te maken met Software Engineering?
 
 Een business proces heeft te maken met software engineering omdat een business proces een activiteit of een set of actiteiten is die uitgevoerd moeten worden om een bepaald doel te bereiken. Dit doel kan zijn het maken van een website, het maken van een applicatie of het maken van een software systeem. Dit doel moet duidelijk worden geformuleerd en moet een nuttig doel hebben.
+
+Het is belangrijk om een process binnen een bedrijf te weten om zo goed mogelijk jou product hierop af te stemmen.
 
 Een goed voorbeeld hierbij is het business proces van het release procces.
 
@@ -141,3 +147,13 @@ _Het business proces van de scraper_
 
 ![Business process](../images/Business_website.png)
 _Het business proces van de website_
+
+## 5. Conclusie
+
+Het belangrijke aan een business process is dat je weet hoe het process binnen een bedrijf werkt. Als ik ga kijken bij mijn individuele project zie ik dat ik door het overleggen met mijn vader (mijn stakeholder) beter weet hoe het bedrijf te werk gaat en dus ook waar mijn software plaats zou moeten / kunnen nemen.
+
+Ik heb proberen uit te leggen wat een business procces is en een aantal voorbeelden gegeven.
+
+### 5.1 Wat heb ik geleerd?
+
+Wat ik voornamelijk heb geleerd dit semester is dat het super belangrijk is om te weten hoe een bedrijf in elkaar zit en hoe je het beste jou software kunt maken om het beste binnen het process van een bedrijf te passen en dus de meeste waarde voor de klant te creeren.

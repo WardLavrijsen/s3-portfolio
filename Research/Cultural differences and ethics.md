@@ -1,7 +1,10 @@
 # Cultural differences and ethics
 
+## Inhoud
+
 - [Cultural differences and ethics](#cultural-differences-and-ethics)
   - [Inhoud](#inhoud)
+  - [Inleiding](#inleiding)
   - [Cultural difference](#cultural-difference)
     - [Cultuur](#cultuur)
     - [Culturele verschillen](#culturele-verschillen)
@@ -17,7 +20,7 @@
       - [Inclusief en toegankelijk zijn:](#inclusief-en-toegankelijk-zijn)
   - [Wat heb ik zelf gedaan?](#wat-heb-ik-zelf-gedaan)
 
-## Inhoud
+## Inleiding
 
 Wat is goed of fout, verschillende culturen, talen en vereisten. Je zult er altijd mee te maken krijgen. In dit onderzoek ga ik bekijken hoe het werkt en ook hoe ik het heb toegepast in mijn project
 
