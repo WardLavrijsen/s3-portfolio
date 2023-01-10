@@ -11,6 +11,7 @@
   - [4. Unit Testen externe API](#4-unit-testen-externe-api)
   - [4. Integration Testing](#4-integration-testing)
   - [4. Static code analysis](#4-static-code-analysis)
+    - [4.1 Github Static Code Analysis](#41-github-static-code-analysis)
   - [5. End-to-end testen](#5-end-to-end-testen)
     - [5.2 Cypress](#52-cypress)
   - [6. Load / Stress testen](#6-load--stress-testen)
@@ -104,6 +105,12 @@ Het grootste voordeel hieraan is dat op het moment dat ik de code push naar gith
 
 ![Github CI](../images/StaticCodeGithub.jpg)
 _Hier is te zien wat er bij deze CI fout ging._
+
+### 4.1 Github Static Code Analysis
+
+1x per week voert github een static code analysis uit en hier krijg ik dan een mail van als er een fout is met een pakkage. Zo ziet die mail er dan uit
+
+![Github Static Code](../images/githubCodeStatic.jpg)
 
 ## 5. End-to-end testen
 
