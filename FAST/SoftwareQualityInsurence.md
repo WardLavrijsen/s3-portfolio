@@ -14,6 +14,7 @@
   - [5. End-to-end testen](#5-end-to-end-testen)
     - [5.2 Cypress](#52-cypress)
   - [6. Load / Stress testen](#6-load--stress-testen)
+    - [6.1 Load testen in CI/CD](#61-load-testen-in-cicd)
   - [7. Performance testen](#7-performance-testen)
   - [8. Conclusie](#8-conclusie)
 
@@ -192,6 +193,11 @@ Door dit te doen krijg ik inzicht in mijn applicatie en wat het wel en niet kan 
 Zo komt de data eruit en is te zien dat het allemaal goed verloopt onder load / stress
 
 ![Artillery](../images/artillery-show.png)
+
+### 6.1 Load testen in CI/CD
+
+![Artillery](../images/ArtilleryFail.jpg)
+Zoals je hier kan zien werkt artillery niet met CI/CD. Wat is hier de reden voor. Omdat de loadtest 30 minuten duurt en best wel CPU intens is wordt dit niet ondersteund door de gratis versie van github actions.
 
 ## 7. Performance testen
 
